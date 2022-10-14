@@ -1,0 +1,37 @@
+.liquid-image-area{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-align-left .liquid-image-area{
+    justify-content: left;
+}
+.content-align-center .liquid-image-area{
+    justify-content: center;
+}
+.content-align-right .liquid-image-area{
+    justify-content: right;
+}
+.liquid-image {
+    position: relative;
+    display: inline-block;
+}
+.liquid-image img{
+  opacity: 0;
+  width: 100%;
+}
+.liquid-image a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.liquid-image canvas{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
